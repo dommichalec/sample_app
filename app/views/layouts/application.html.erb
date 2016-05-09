@@ -5,11 +5,30 @@
 </head>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- ensure no cross-browser forgery -->
   <%= csrf_meta_tags %>
+  <!-- ensure older browsers can render the HTML5 in this site -->
+  <!-- [if lt IE 9 ]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif]-->
 </head>
 <body>
-
-<%= yield %>
+<header class='navbar navbar-fixed-top' id='header'>
+  <div class="container">
+    <%= link_to "sample app", root_path, id: 'logo' %>
+    <nav>
+      <ul class='nav navbar-nav navbar-right'>
+        <li><%= link_to "about", about_path %></li>
+        <li><%= link_to "help", help_path %></li>
+        <li><%= link_to "log in", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
