@@ -63,6 +63,8 @@ GEM
     concurrent-ruby (1.0.2)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.6.0)
     faker (1.4.2)
@@ -183,6 +185,7 @@ DEPENDENCIES
   bootstrap-will_paginate (= 0.0.10)
   byebug (= 3.4.0)
   coffee-rails (= 4.1.0)
+  email_validator
   faker (= 1.4.2)
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)

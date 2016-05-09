@@ -1,3 +1,5 @@
+# bundle exec rake test:controllers
+
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
