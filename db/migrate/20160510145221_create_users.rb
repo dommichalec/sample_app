@@ -1,4 +1,3 @@
-# first migration
 class CreateUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
@@ -8,5 +7,6 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps null: false
     end
+    add_index :users, :email
   end
 end
