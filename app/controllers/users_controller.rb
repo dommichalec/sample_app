@@ -1,5 +1,3 @@
-require 'pry' # using 'binding.pry to debug'
-
 class UsersController < ApplicationController
 
   def new
