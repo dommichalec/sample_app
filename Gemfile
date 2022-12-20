@@ -8,7 +8,7 @@ gem 'will_paginate',           '3.0.7'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'email_validator'
 gem 'bootstrap-sass',          '3.2.0.0'
-gem 'sass-rails',              '5.0.2'
+gem 'sass-rails', '6.0.0'
 gem 'autoprefixer-rails'
 gem 'uglifier',                '2.5.3'
 gem 'coffee-rails',            '4.1.0'
@@ -21,7 +21,7 @@ group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
   gem 'pry-nav'
-  gem 'web-console', '2.0.0.beta3'
+  gem 'web-console', '2.0.0'
   gem 'spring',      '1.1.3'
 end
 
